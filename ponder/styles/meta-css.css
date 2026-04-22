@@ -36,7 +36,7 @@ img {
 #topics {
     line-height: 1.5em;
     margin: 0 auto;
-    max-width: 750px;
+    width: 55%;
 }
 
 .list {
