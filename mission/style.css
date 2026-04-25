@@ -1,0 +1,45 @@
+#content {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: Georgia;
+    font-weight: 400;
+}
+
+h1 {
+    padding-top: 30px;
+    letter-spacing: .1em;
+}
+
+h2 {
+    color: rgb(93, 157, 216);
+    font-size: .75em;
+    margin-bottom: 0px;
+    letter-spacing: .25em;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: lightgray;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+p, ol{
+    text-align: left;
+    line-height: 1.5em;
+    margin: 16px 6px;
+}
+
+li {
+    padding: 6px 0;
+}
+
+img {
+    width: 20%;
+    padding: 25px;
+}
