@@ -1,7 +1,9 @@
 #content {
     width: 500px;
-    margin: 0 auto;
+    margin: 20px auto;
     text-align: center;
+    padding: 50px 90px;
+    border: 1px solid gray;
 }
 
 h1, h2 {
@@ -17,7 +19,7 @@ h1 {
 h2 {
     color: rgb(93, 157, 216);
     font-size: .75em;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
     letter-spacing: .25em;
 }
 
@@ -42,4 +44,13 @@ li {
 img {
     width: 20%;
     padding: 25px;
+}
+
+.dark {
+    background-color: rgb(58, 58, 58);
+    color: white;
+}
+
+.dark-h2 {
+    color: rgb(119, 184, 245);
 }
