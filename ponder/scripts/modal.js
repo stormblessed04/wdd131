@@ -15,7 +15,8 @@ function openModal(e) {
     modalImage.src = full;
     modalImage.alt = alt;
 
-    modal.showModal();
+    // Wait for image to load, then show modal
+    modalImage.onload = () => modal.showModal();
 }
 // Close modal on button click
 closeButton.addEventListener('click', () => {
