@@ -58,6 +58,8 @@ p {
 
 footer {
     border-top: 2px solid rgb(194, 177, 30);
+    border-bottom: 2px solid rgb(194, 177, 30);
+    margin-bottom: 5px;
 }
 
 @media screen and (min-width: 720px) {
