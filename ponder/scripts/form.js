@@ -51,19 +51,19 @@ form.addEventListener("submit", function (event) {
 
     // Validate the input
     // Let the user know to select at least one campus
-    if (getSelectedCampuses().length === 0) {
+    if (selectedCampuses.length === 0) {
         output.textContent = "Please select at least one campus.";
         return;
     } 
     
     // Let the user know if they choose many campuses but didn't put a note that they need to add a note
-    if (travelRange.value === "many" && notes.value === ""){
+    if (type === "many" && note === ""){
         output.textContent = "Please fill out the travel notes field.";
         return;
     }
     
     //Let the user know if they choose many campus but only had one campus selected that they need to choose at least two campuses
-    if (travelRange.value === "many" && getSelectedCampuses().length < 2){
+    if (type === "many" && selectedCampuses.length < 2){
         output.textContent = "Please select at least two campuses.";
         return;
     }
