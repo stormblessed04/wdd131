@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Modern+Antiqua&display=swap');
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #161920;
+    --secondary-color: #E7CD8C;
+    --accent1-color: #5AA8D9;
+    --accent2-color: #B589DB;
+
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Cinzel Decorative", Georgia, serif;
+    --paragraph-font: "Modern Antiqua", "Times New Roman", serif;
+
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: var(--primary-color); /* headlines on a white background */
+    --headline-color-on-color: var(--secondary-color); /* headlines on a colored background */
+    --paragraph-color-on-white: var(--primary-color); /* paragraph text on a white background */
+    --paragraph-color-on-color: white; /* paragraph text on a colored background */
+    --paragraph-background-color: var(--primary-color);
+    --nav-link-color: var(--accent1-color);
+    --nav-background-color: var(--primary-color);
+    --nav-hover-link-color: var(--accent2-color);
+    --nav-hover-background-color: var(--primary-color);
+}
+
+body {
+    min-width: 350px;
+    max-width: 1600px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--heading-font);
+}
+
+p {
+    font-family: var(--paragraph-font);
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 15px;
+}
+
+#page-title {
+    color: var(--secondary-color);
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#logo {
+    display: block;
+    min-width: 100px;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+#welcome {
+    padding: 10px;
+}
+
+#welcome-message {
+    text-align: center;
+    color: var(--primary-color);
+    max-width: 800px;
+    padding: 10px;
+    margin: 20px auto;
+    border: 3px solid var(--accent2-color);
+    border-radius: 10px;
+}
+
+.section-title {
+    color: var(--primary-color);
+    font-size: 1.5em;
+    margin: 15px 40px;
+}
+
+#spell-list {
+    width: 98%;
+    margin: 20px auto;
+    border-top: 3px solid var(--accent1-color);
+    border-bottom: 3px solid var(--accent1-color);
+}
+
+#horizontal-region {
+    margin: 10px 10px;
+    padding: 5px;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#left-button, #right-button {
+    height: 210px;
+    background-color: rgba(153, 153, 153, 0.308);
+    border: 3px solid var(--accent2-color);
+    border-radius: 8px;
+    font-size: 1.5em;
+    margin: 8px;
+}
+
+#left-button:hover, #right-button:hover {
+    background-color: rgba(129, 129, 129, 0.418);
+}
+
+#card-region {
+    width: 100%;
+    min-height: 520px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    overflow-x: hidden;
+}
+
+.spell-card {
+    flex: 1 1 0;
+    max-width: 300px;
+    padding: 15px;
+    margin: 25px auto;
+    border: 3px solid var(--secondary-color);
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.spell-name {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.card-img {
+    display: block;
+    max-width: 200px;
+    width: 90%;
+    margin: 0 auto;
+    border: 3px solid var(--primary-color);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.short-description {
+    margin: 15px 10px;
+}
+
+.spell-button {
+    display: block;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-family: var(--paragraph-font);
+    font-size: 1.1em;
+    border: 3px solid var(--accent1-color);
+    border-radius: 4px;
+    padding: 5px;
+    margin: 10px auto;
+}
+
+.spell-button:hover {
+    text-decoration: underline;
+    background-color: #e7cd8c9c;
+}
+
+#search-region {
+    width: 98%;
+    margin: 20px auto;
+    margin-top: 60px;
+    border-top: 3px solid var(--accent2-color);
+    border-bottom: 3px solid var(--accent2-color);
+}
+
+#search-bar {
+    width: fit-content;
+    margin: 0 40px; 
+    padding: 5px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+#search-input {
+    font-family: var(--paragraph-font);
+    font-size: 1.3em;
+    width: 55vw;
+    min-width: 200px;
+    padding: 3px;
+    border: none;
+}
+
+#search-input:focus {
+    outline: 2px solid var(--accent1-color);
+    border-radius: 3px;
+}
+
+#search-button {
+    background: none;
+    aspect-ratio: 1 / 1;
+    border: none;
+    padding: 8px;
+}
+
+#search-button:hover {
+    background-color: rgba(184, 184, 184, 0.454);
+}
+
+#search-button img {
+    height: 100%;
+}
+
+#search-results {
+    min-height: 200px;
+}
+
+.search-card {
+    padding: 15px;
+    margin: 25px auto;
+    border: 3px solid var(--accent1-color);
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.search-info {
+    width: 100%;
+}
+
+.search-info button {
+    margin-right: 15px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.search-img {
+    display: block;
+    max-width: 150px;
+    width: 100%;
+    height: 100%;
+    margin: 20px auto;
+    border: 3px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+dialog {
+    max-width: 100vw;
+    max-height: 100vh;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: rgba(0,0,0,.65);
+}
+.close-viewer {
+    position: absolute;
+    top: 4vh;
+    right: 6vw;
+    padding: 3px 6px;
+    font-size: 1.2em;
+}
+
+#modal-container {
+    box-sizing: border-box;
+    min-width: 300px;
+    width: 90%;
+    display: flow-root;
+    padding: 50px;
+    margin: 10vh auto;
+    background-color: var(--secondary-color);
+    border: 5px solid var(--accent1-color);
+}
+
+#modal-title {
+    color: var(--primary-color);
+    font-size: 3em;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: var(--accent2-color);
+}
+
+.modal-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    width: 50%
+
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 30px;
+}
+
+footer p {
+    color: var(--secondary-color);
+    padding: 10px;
+    margin: 0;
+}
+
+footer a {
+    color: var(--accent1-color);
+}
+
+#social {
+    display: flex;
+    align-self: flex-end;
+    margin-top: 30px;
+    width: 250px;
+    height: 70px;
+}
+
+#social a {
+    color: var(--primary-color);
+    padding: 5px;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+@media screen and (min-width: 700px){
+    header {
+        display: flex;
+        align-items: center;
+    }
+    #logo {
+        margin: 0;
+    }
+    #page-title {
+        margin: 0 auto;
+    }
+    .search-card {
+        display: flex;
+        justify-content: space-between;
+        margin: 25px 40px;
+    }
+    .search-img {
+        margin: auto;
+    }
+    .modal-img {
+        float: right;
+        margin: 25px;
+    }
+    footer {
+        display: flex;
+    }
+}

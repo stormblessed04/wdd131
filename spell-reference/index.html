@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Reference page for common D&D spells">
+        <meta name="author" content="Kyle Nordick">
+
+        <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="RuneArchive - Spell Reference">
+        <meta property="og:description" content="Reference page for common D&D spells">
+        <meta property="og:url" content="https://stormblessed04.github.io/wdd131/spell-reference">
+        <meta property="og:image" content="images/social-preview-image">
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="RuneArchive - Spell Reference">
+        <meta name="twitter:description" content="Reference page for common D&D spells">
+        <meta name="twitter:image" content="images/social-preview-image">
+
+        <link rel="icon" href="images/favicon.ico">
+        <link rel="apple-touch-icon" href="images/apple-touch.png">
+
+        <title>RuneArchive - Spell Reference</title>
+        <link rel="stylesheet" href="styles/styles.css">
+        <script type="module" defer src="scripts/data.js"></script>
+        <script type="module" defer src="scripts/spells.js"></script>
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="images/logo-v2-sm.png" alt="RuneArchive logo">
+            <h1 id="page-title">RuneArchive - Spell Reference</h1>
+        </header>
+        <main>
+            <div id="welcome">
+                <section id="welcome-message">
+                    <h1>Welcome to RuneArchive!</h1>
+                    <p>
+                        Welcome to the RuneArchive spell reference - your home for details on Dungeons and 
+                        Dragons (D&D) spells. Find a spell in the list or search for one below and select it 
+                        to see more information.
+                    </p>
+                </section>
+            </div>
+            <div id="spell-list">
+                <h3 class="section-title">Spell List</h3>
+                <div id="horizontal-region">
+                    <button id="left-button" type="button">&larr;</button>
+                    <div id="card-region">
+
+                    </div>
+                    <button id="right-button" type="button">&rarr;</button>
+                </div>
+            </div>
+            <div id="search-region">
+                <div id="search-header">
+                    <h3 class="section-title">Spell Search</h3>
+                    <div id="search-bar">
+                        <input id="search-input" type="text" placeholder="Search for a spell">
+                        <button id="search-button" type="button">
+                            <img id="search-img" src="images/search.svg" alt="search">
+                        </button>
+                    </div>
+                </div>
+                <div id="search-results">
+
+                </div>
+            </div>
+            <dialog>
+                <div id="modal-container">
+                    
+                </div>>
+                <button class="close-viewer">X</button>
+            </dialog>
+        </main>
+        <footer>
+            <div id="footer-text">
+                <p>
+                    This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of
+                    the Coast LLC and available <a href="https://dnd.wizards.com/resources/systems-reference-document">
+                    here</a>. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License 
+                    available <a href="https://creativecommons.org/licenses/by/4.0/legalcode">here.</a>
+                </p>
+                <p>&copy; Kyle Nordick 2026</p>
+                <p>Some images, including the RuneArchive logo image, were generated using Google Gemini AI</p>
+            </div>
+            <div id="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>
