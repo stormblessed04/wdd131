@@ -70,6 +70,10 @@ header {
     border-radius: 10px;
 }
 
+#welcome-message h2 {
+    font-size: 1.8em;
+}
+
 .section-title {
     color: var(--primary-color);
     font-size: 1.5em;
